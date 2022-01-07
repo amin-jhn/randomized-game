@@ -62,6 +62,7 @@ int main(){
         y=random(0,side);
         } while(isFree(x,y)==0);
         fprintf (map,"(%d,%d)\n", x, y);
+        Rworld[x][y]='F';
     }
     fprintf(map,"===\n");
     int num_of_species = rand()%10+1;
@@ -78,6 +79,7 @@ int main(){
                 y=random(0,side);
                 }while(isFree(x,y)==0);
             fprintf (map,"(%d,%d)\n",x,y);
+            Rworld[x][y]='animals[i-1]';
         }
         fprintf (map,"\n");
     }
