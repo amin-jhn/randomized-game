@@ -79,7 +79,7 @@ int main(){
                 y=random(0,side);
                 }while(isFree(x,y)==0);
             fprintf (map,"(%d,%d)\n",x,y);
-            Rworld[x][y]='animals[i-1]';
+            Rworld[x][y]=animals[i-1];
         }
         fprintf (map,"\n");
     }
